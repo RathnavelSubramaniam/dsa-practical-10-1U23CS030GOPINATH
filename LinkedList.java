@@ -52,7 +52,7 @@ public void deleteEnd()
         head=null;
         else{
             Node temp=head;
-            Node prev=tail;
+            Node prev=head;
             while(temp.next.next!=null)
             {
                 prev=prev.next;
@@ -63,7 +63,7 @@ public void deleteEnd()
             System.out.println("Deleted Element is:"+temp.data);
         }
     }
-            
+         
 public void displayList() {
         Node current = head;
         while (current != null) {
